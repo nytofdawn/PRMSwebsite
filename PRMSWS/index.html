@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking. Pay. Go.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #024463;
+      scroll-behavior: smooth; /* Smooth scrolling */
+      color: #000000;
+    }
+    section {
+      margin-top: 20px; /* Space between sections */
+      padding: 10px;
+      padding-top: calc(20px + 60px); /* Space for fixed header */
+      background-color: rgba(17, 82, 42, 0);
+      border-radius: 5px;
+    }
+    header {
+      background-color: #1C2841;
+      color: #021025;
+      padding: 20px 0; /* Adjusted padding to avoid side spacing */
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0; 
+      padding: 0; 
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+      color: 'black'; 
+    }
+    nav a {
+      color: #00a9ec;
+      text-decoration: none;
+      padding: 5px 10px; 
+      border-radius: 5px; 
+      transition: background-color 0.3s, color 0.3s; }
+
+    nav a.active {
+      color: '#ffffff'; 
+      background-color: rgb(8, 104, 83); 
+      font-weight: bold;
+    }
+    main {
+      padding: 80px 20px;
+    }
+    .app-image {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+    }
+    .app-image img {
+      max-width: 10%;
+      height: auto;
+    }
+    .download-button {
+      background-color: #1a83fc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: 300px;
+      height: 60px;
+      justify-content: center;
+      align-content: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .tutorials-container {
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+    }
+    .tutorial {
+      flex: 1;
+      min-width: 250px; 
+      background: rgba(15, 18, 63, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.404); 
+    }
+    .video-container {
+  width: 100%;                 
+  max-width: 200px;           
+  margin: 20px auto;          
+  padding: 0 10px;          
+}
+video {
+  width: 100%;                /* Ensures the video scales to the width of its container */
+  height: auto;               /* Maintains aspect ratio */
+  border-radius: 5px;         /* Optional: adds rounded corners to the video */
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="#inquire">Inquire System</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Parking. Pay. Go.</h1>
+      <p>When you're on-the-go, the free Smart Parking Mobile App makes it easy to find a parking spot without running back to feed the meter. And for added convenience, you can reserve a spot in advance.</p>
+      <div class="app-image">
+        <img src="./images/reservation.png" alt="Smart Parking Mobile App">
+      </div>
+      <a href="https://expo.dev/artifacts/eas/6SorPekNbWuL2rQAFaHosR.apk" class="download-button">Download App</a>
+    </section>
+    <hr> 
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to our Smart Parking system, your premier destination for seamless parking solutions. We are committed to revolutionizing the parking experience by providing cutting-edge technology and unparalleled customer service.</p>
+      <p>What Sets Us Apart:</p>
+      <ul>
+        <li>Advanced Technology: Our Smart Parking System utilizes state-of-the-art sensors and data analytics to offer real-time parking availability information.</li>
+        <li>User-Friendly Mobile App: Our intuitive mobile app makes it easy to find and reserve the perfect parking spot, all at your fingertips.</li>
+        <li>Exceptional Customer Service: We are dedicated to providing a superior parking experience, ensuring our guests' needs are met with the utmost care and attention.</li>
+      </ul>
+      <p>Why Choose Us:</p>
+      <ul>
+        <li>Efficiency: Our goal is to provide seamless and hassle-free parking experiences, saving you time and effort.</li>
+        <li>Convenience: Reserve your parking space in advance and enjoy a stress-free parking experience without worrying about availability.</li>
+        <li>Reliability: Count on our Smart Parking System to accurately guide you to vacant spots and provide secure and convenient parking.</li>
+      </ul>
+      <p>Car Parking:</p>
+      <ul>
+        <li>Availability: Smart Parking App will provide an accurate status of available spaces in every given area.</li>
+        <li>Location: Smart Parking App also provides directions and instructions to help you find the parking area easily.</li>
+        <li>Reservation: The Smart Parking System offers reservations and real-time updates.</li>
+      </ul>
+      <p>Payment: Fees as per your Smart Parking System account details, credit, and cash.</p>
+    </section>
+    <hr> 
+    <section id="tutorials">
+      <h2>How it works</h2>
+      <div class="tutorials-container">
+        <div class="tutorial">
+          <h3>How to Create Account in Mobile App</h3>
+          <div class="video-container">
+            <video controls>
+              <source src="./tutorvids/tutor1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p>In order to have an account to Mobile app, you need to download the Smart Parking app...</p>
+        </div>
+        <div class="tutorial">
+          <h3>How to Reserve Parking Slot</h3>
+          <div class="video-container">
+            <video controls>
+              <source src="./tutorvids/tutor2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <ol>
+            <li>Download the mobile application.</li>
+            <li>Select your desired parking location.</li>
+            <li>Choose your reservation time.</li>
+            <li>Confirm your reservation.</li>
+          </ol>
+        </div>
+        <div class="tutorial">
+          <h3>How to use Google map</h3>
+          <div class="video-container">
+            <video controls>
+              <source src="./tutorvids/tutor3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p>To find a location or to navigate to where you want to park, you can use the Google map integrated in the Smart Parking app...</p>
+        </div>
+      </div>
+    </section>       
+    <hr>    
+    <section id="inquire">
+      <h2>Inquire System</h2>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>If you have any questions or inquiries, please reach out to us:</p>
+      <p>Email: <a href="mailto:mobile.parking025@gmail.com"style="text-decoration:none; color:green;">mobile.parking025@gmail.com</a></p>
+      <p>
+        Facebook: 
+        <a href="https://www.facebook.com" target="_blank" style="text-decoration: none; color: inherit;">
+          Parking Reservation System
+        </a>
+        <img src="./images/fb.png" alt="Facebook" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 5px;">
+      </p>
+    </section>                   
+    <hr> 
+  </main>
+  <script>
+    function setActiveLink() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      let currentSection = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', setActiveLink);
+  </script>
+</body>
+</html>
